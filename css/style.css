@@ -197,8 +197,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chapter5{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
 .chapter5 h2{font-size:3.5rem;color:#00dce2;font-family:'Poppins' !important;font-weight:800;}
 .tabs_chap5{margin-top:3rem;}
-.tabs_chap5 li{font-size:1.2rem;float:left;color:#b7c5d5}
-.tabs_chap5 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
+.tabs_chap5 li{font-size:1.2rem;float:left;color:#b7c5d5;font-family:'Poppins' !important;}
+.tabs_chap5 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);font-weight:bold;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	transition: background-size 1s;
@@ -216,8 +216,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chapter6{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
 .chapter6 h2{font-size:3.5rem;color:#00dce2;font-family:'Poppins' !important;font-weight:800;}
 .tabs_chap6{margin-top:3rem;}
-.tabs_chap6 li{font-size:1.2rem;float:left;color:#b7c5d5}
-.tabs_chap6 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
+.tabs_chap6 li{font-size:1.2rem;float:left;color:#b7c5d5;font-family:'Poppins' !important;}
+.tabs_chap6 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);font-weight:bold;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	transition: background-size 1s;
