@@ -175,7 +175,12 @@ $(document).ready(function(){
         $("#" + activeTab).fadeIn()
     });
     $('.btn_chapter5_open').click(function(){
-        $('.chap5_list_open').slideDown();
+        $('.chap5_pop_list').show().css('height','100vh').css('overflow-y','scroll')
+        $('body').css('overflow','hidden')
+        $('#mask,.chap5_pop_close_btn').click(function(){
+            $('.chap5_pop_list').hide();
+            $('body').css('overflow','auto')
+        })
     })
     $(".tab_content_chap6").hide();
     $(".tab_content_chap6:first").show();

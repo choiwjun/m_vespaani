@@ -205,12 +205,27 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 }
 .tabs_chap5 li:first-child{margin-right:2rem;}
 .chap5_tab_wrap{clear: both;width:100%;overflow: hidden;}
-
 .tab_content_chap5 li{color:#222;font-size:1.1rem;line-height:2rem;}
 .tab_content_chap5 h3{color:#222;font-size:1.1rem;font-weight:bold;margin-bottom:1.5rem;margin-top:3rem}
 .tab_content_chap5 h3:first-child{margin-top:0rem;}
 .btn_chapter5_open{font-size:1.1rem;color:#222;margin-top:3rem}
 .btn_chapter5_open img{width:1.8rem;margin-left:1rem}
+
+.chap5_pop_list{
+	background:white;
+	margin:0 auto;
+	width:calc(100% - 3rem);
+	position: fixed;
+	z-index:999999;
+	top:0;
+	left:0%;
+    padding:0 1.5rem;
+    display: none;
+}
+.chap5_pop_list h3{margin-top:3.5rem !important;text-align:center;}
+.chap5_pop_list li{text-align:center;}
+.chap5_pop_close_btn{position: absolute;top:20px;right:20px;cursor: pointer;}
+
 /* chapter5 */
 /* chapter6 */
 .chapter6{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
