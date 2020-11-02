@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    var scrollValue = $(document).scrollTop();
-    console.log(scrollValue)
     // 헤더 스크롤 이벤트
 	window.onscroll = function(){
 		if($(document).scrollTop() > 1){
@@ -49,13 +47,49 @@ $(document).ready(function(){
            
         })
     });
-    $('.btn_close,.lnb_menu a').click(function(){
+    $('.btn_close,.lnb_menu a,#mask').click(function(){
         $('.menu-trigger').removeClass('active-8');
         $('.nav').animate({left:'-100%'},400,)
         $('#mask').hide(function(){
             u_wrapWindowByMask()      
         });
-    })
+    });
+    
+    $('.btn_main').click(function(){
+        var offset = $(".chapter1").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.btn_game_info').click(function(){
+        var offset = $(".chapter2").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.synop').click(function(){
+        var offset = $(".chapter2").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.btn_onair,.chap1_detail').click(function(){
+        var offset = $(".chapter3").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+        
+    });
+    $('.btn_char').click(function(){
+        var offset = $(".chapter4").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.btn_staff').click(function(){
+        var offset = $(".chapter5").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.btn_music').click(function(){
+        var offset = $(".chapter6").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    $('.btn_down_move').click(function(){
+        var offset = $(".chapter7").offset();
+        $('html, body').animate({scrollTop : offset.top}, 500);
+    });
+    
+
     jQuery.fn.center = function () {
         this.css("position","absolute");
         this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");

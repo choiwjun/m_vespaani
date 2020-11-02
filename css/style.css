@@ -58,9 +58,10 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 	transition: background-size 1s;
 	background-position:left 0 top -5px;
 }
+.underline:nth-child(1){width:70px;}
 .underline:nth-child(2),.underline:nth-child(3){width:55px;}
 .underline:nth-child(4),.underline:nth-child(5){width:35px;}
-.underline:hover,.underline.on {
+.underline.on {
 	background-size: 100% 100%;
 	color:#222;
 	display: block;
@@ -105,7 +106,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap2_bg div:first-child img{width:100%}
 /* chapter2 */
 /* chapter3 */
-.chapter3{position: relative;width:calc(100% - 3rem);padding:0 1.5rem}
+.chapter3{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 0 1.5rem}
 .chapter3_tit{position: relative;padding:1.5rem 0 4rem 0}
 .chapter3_tit h2{position: absolute;left:0;font-size:1.7rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;}
 .chapter3_tit div:last-child{position: absolute;right:0}
@@ -127,7 +128,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 	width:calc(100% - 3rem);
 	position: absolute;
 	z-index:999999;
-	top:0;
+	top:15%;
 	left:0%;
     padding:0 1.5rem;
 	display:none;
@@ -157,8 +158,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap3_pop_close_btn{position: absolute;top:20px;right:20px;cursor: pointer;}
 /* chapter3 */
 /* chapter4 */
-.chapter4{position: relative;}
-.chapter4 h2{font-size:2.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;margin-top:6rem;width:calc(100% - 3rem);padding:0 1.5rem}
+.chapter4{position: relative;padding-top:3rem}
+.chapter4 h2{font-size:2.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;width:calc(100% - 3rem);padding:0 1.5rem}
 .chap4_tab_wrap{clear: both;overflow: hidden;width:calc(100% - 3rem);padding:0 1.5rem}
 .chap4_tab_wrap ul{width:100%;margin-top:2rem;}
 .chap4_tab_wrap ul li{text-align:center;display: inline-block;font-size:1.1rem;color:#b7c5d5;cursor: pointer;padding-bottom:10px;width:24%}
@@ -194,7 +195,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap4_visual .chap2_sub_video_btn{position: absolute;z-index:3;top:1rem;right:2rem}
 /* chapter4 */
 /* chapter5 */
-.chapter5{position: relative;width:calc(100% - 3rem);padding:0 1.5rem 2rem 1.5rem}
+.chapter5{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
 .chapter5 h2{font-size:3.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;}
 .tabs_chap5{margin-top:3rem;}
 .tabs_chap5 li{font-size:1.2rem;float:left;}
@@ -213,8 +214,8 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .btn_chapter5_open img{width:1.8rem;margin-left:1rem}
 /* chapter5 */
 /* chapter6 */
-.chapter6{position: relative;width:calc(100% - 3rem);padding:0 1.5rem 4.5rem 1.5rem}
-.chapter6 h2{font-size:3.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;margin-top:5rem}
+.chapter6{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
+.chapter6 h2{font-size:3.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;}
 .tabs_chap6{margin-top:3rem;}
 .tabs_chap6 li{font-size:1.2rem;float:left;}
 .tabs_chap6 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
@@ -232,23 +233,24 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap6_bg div{float:left;margin-left:1.5rem;margin-top:110px}
 .chap6_bg div p:first-child{font-family: 'Poppins';font-size:1.2rem;color:#1fd9de}
 .chap6_bg div p:nth-child(2),.chap6_bg div p:nth-child(3){color:white;font-size:.8rem}
-.chap6_m_info{margin-top:1rem;font-size:1.2rem;color:#222}
+.chap6_m_info{margin-top:1rem;color:#222}
+.chap6_m_info p{font-size:1.2rem;}
 /* chapter6 */
 .chapter7{width:100%;position: relative;}
 .chapter7_logo,.chapter7_tit1,.chapter7_tit_sub,.chap7_video_sub,.chap7_detail{position: absolute;z-index:2;width:100%;}
 .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:5rem;background-size:contain;}
-.chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:14.5rem;background-size:contain;}
+.chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:14rem;background-size:contain;}
 .chap7_video video{object-fit:cover;width:100%;height:110vh;}
-.chap7_video::after{background:black;content:'';position: absolute;top:0;left:0;width:100%;opacity:.6;z-index:1;}
-.chapter7_tit_sub{color:white;top:21.75rem;text-align:center;}
+.chap7_video::after{background:black;content:'';position: absolute;top:0;left:0;width:100%;opacity:.6;z-index:1;height:110vh;}
+.chapter7_tit_sub{color:white;top:19rem;text-align:center;}
 .chapter7_tit_sub p{line-height:1.75rem}
 .chapter7_tit_sub p span{font-weight:bold;}
-.chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:28rem;}
+.chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:25.5rem;}
 .chap7_detail{height:8.25rem;background:url('../images/btn_chap1_detail.png') center top no-repeat;background-size:contain;top:34.5rem}
 .chap7_video_sub_show{width:80%;position: absolute;z-index:9999;display:none;top:50%}
 .chap7_video_sub_show div{float:right;cursor: pointer;margin-bottom:10px;transition: all ease 1s;}
 .chap7_video_sub_show div img{width:70%}
-.chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:2rem}
+.chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:5rem;z-index:2;}
 .chap7_appdown_btn li{display:inline-block;float:left;width:50%}
 .chap7_appdown_btn li img{width:100%}
 .chap7_appdown_btn li:first-child{float:left;}
@@ -280,6 +282,12 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
     .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:210px;background-size:contain;display:block;}
+    .chap6_bg div{float:left;margin-left:1rem;margin-top:130px}
+    .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
+    .chapter7_tit_sub{color:white;top:23rem;text-align:center;}
+    .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:30rem;}
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 376px) { 
     .chapter1_logo{height:7.85rem;top:5rem;}
@@ -291,12 +299,24 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
     .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
+    .chapter7_tit_sub{color:white;top:23rem;text-align:center;}
+    .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:30rem;}
 }
 @media only screen and (min-device-width : 411px) and (max-device-width : 425px) { 
     .chap4_tab_wrap ul li{width:50%;font-size:1.2rem;letter-spacing:-2px;text-align:left;float:left;}
     .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
     .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:250px;background-size:contain;display:block;}
+    .chap6_bg div{float:left;margin-left:1rem;margin-top:170px}
+    .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:7rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:17rem;background-size:contain;}
+    .chapter7_tit_sub{color:white;top:24rem;text-align:center;}
+    .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:33rem;}
+    .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:7rem}
+
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px){ 
     .chapter1_logo{height:10rem;top:7rem;}
@@ -307,6 +327,17 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap1_detail{height:10rem;top:49rem}
     .fs_1_25{font-size:2.5rem !important}
     .chap2_story1,.chap2_story2{padding:0 1.5rem;color:#222;font-size:1.8rem;line-height:1.8rem}
+    .swiper-button-prev{position:absolute;background:url(../images/btn_chap4_slide_prev_on.png) no-repeat;top:25rem !important;outline-style:none;}
+    .swiper-button-next{position:absolute;background:url(../images/btn_chap4_slide_next_on.png) no-repeat;top:25rem !important;outline-style:none;}
+    .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:490px;background-size:contain;display:block;}
+    .chap6_bg div{float:left;margin-left:1rem;margin-top:410px}
+
+    .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:9rem;background-size:contain;}
+    .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:19rem;background-size:contain;}
+    .chapter7_tit_sub{color:white;top:27rem;text-align:center;}
+    .chapter7_tit_sub p{line-height:3.4rem;}
+    .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:42rem;}
+    .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:9rem}
 }
 @media only screen and (min-device-width : 1024px){ 
     .chapter1_logo{height:15.7rem;top:10rem;}
@@ -317,4 +348,18 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap1_detail{height:16rem;top:61rem}
     .fs_1_25{font-size:2.5rem !important}
     .chap2_story1,.chap2_story2{padding:0 1.5rem;color:#222;font-size:2.4rem;line-height:2.4rem}
+    .swiper-button-prev{position:absolute;background:url(../images/btn_chap4_slide_prev_on.png) no-repeat;top:35rem !important;outline-style:none;}
+    .swiper-button-next{position:absolute;background:url(../images/btn_chap4_slide_next_on.png) no-repeat;top:35rem !important;outline-style:none;}
+    .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:670px;background-size:contain;display:block;}
+    .chap6_bg div{float:left;margin-left:1rem;margin-top:560px}
+    .chap6_bg div p:first-child{font-family: 'Poppins';font-size:1.4rem;color:#1fd9de}
+    .chap6_bg div p:nth-child(2),.chap6_bg div p:nth-child(3){color:white;font-size:1.2rem}
+    .chap7_video video{object-fit:cover;width:100%;height:100vh;}
+    .chap7_video::after{background:black;content:'';position: absolute;top:0;left:0;width:100%;opacity:.6;z-index:1;height:100vh;}
+    .chapter7_logo{height:15.7rem;top:10rem;}
+    .chapter7_tit1{height:9.3rem;top:29rem;}
+    .chapter7_tit_sub{top:41rem;}
+    .chapter7_tit_sub p{line-height:3.5rem}
+    .chap7_video_sub{height:7rem;top:56rem}
+    .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:10rem}
 }
