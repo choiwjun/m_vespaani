@@ -116,17 +116,18 @@ $(document).ready(function(){
     $('.btn_chapter3_table_open').click(function(){
         $('.table_visible').slideDown();
     })
-
+    
     $('.chap3_tit_on').click(function(){
-        $('.chap3_pop').show(function(){
-            
-        });
+        
+        $('.chap3_pop').show().css('height','100vh').css('overflow-y','scroll')
+        $('body').css('overflow','hidden')
         $('#mask').show(function(){
             $('#mask').fadeTo("fast",.8);    
             wrapWindowByMask();
             $('#mask,.chap3_pop_close_btn').click(function(){
                 $('#mask').hide();
                 $('.chap3_pop').hide();
+                $('body').css('overflow','auto')
             })
         });
     })

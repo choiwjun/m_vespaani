@@ -114,6 +114,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chap3_table table td,.chap3_table table th{width:33%;font-size:1.1rem;color:#222;padding:1rem 0}
 .chap3_table table th{background:#e6f0f9;font-weight:bold;}
 .chap3_table table td{line-height:1.8rem;font-size:1rem;}
+.chap3_table table td:nth-child(2){text-align:left;}
 .chap3_table table tr:nth-child(even){background:#e6f0f9;}
 .chap3_bg{float:left;margin-left:20px}
 .chap3_bg::after{content:'';position: absolute;}
@@ -123,14 +124,15 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 	background:white;
 	margin:0 auto;
 	width:calc(100% - 3rem);
-	position: absolute;
+	position: fixed;
 	z-index:999999;
-	top:15%;
+	top:0;
 	left:0%;
     padding:0 1.5rem;
-	display:none;
+    display: none;
+    
 }
-.chap3_pop_menu{width:100%;margin-top:5rem;overflow: hidden;}
+.chap3_pop_menu{width:100%;margin-top:5rem;}
 .chap3_pop_menu div:first-child{float:left;}
 .chap3_pop_menu div:first-child ul li{float:left;display:inline-block;cursor: pointer;text-indent:-99999px;width:36px;height:36px}
 .chap3_pop_menu div:first-child ul li:first-child{background:url('../images/img_chap3_pop_menu1.png') no-repeat;}
@@ -144,7 +146,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 	appearance:none; 
 	background:url('../images/bg_chap3_select.png')no-repeat center right 20px;
 }
-.chap3_pop_list{width:100%;margin-top:2rem;overflow-y:scroll;height:20rem}
+.chap3_pop_list{width:100%;margin-top:2rem;overflow-y:scroll;}
 .chap3_pop_list dt img{width:6.7rem;margin-right:2rem}
 .chap3_pop_list dt span{display:table-cell;vertical-align:middle;color:#222;font-size:1.2rem;font-weight:bold;}
 .chap3_pop_list dl{border-bottom:1px solid #e7eaee;width:100%;margin-bottom:30px;cursor: pointer;overflow: hidden;}
@@ -195,7 +197,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chapter5{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
 .chapter5 h2{font-size:3.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;}
 .tabs_chap5{margin-top:3rem;}
-.tabs_chap5 li{font-size:1.2rem;float:left;}
+.tabs_chap5 li{font-size:1.2rem;float:left;color:#b7c5d5}
 .tabs_chap5 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -214,7 +216,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .chapter6{position: relative;width:calc(100% - 3rem);padding:3rem 1.5rem 2rem 1.5rem}
 .chapter6 h2{font-size:3.5rem;color:#00dce2;font-family: 'Poppins';font-weight:bold;}
 .tabs_chap6{margin-top:3rem;}
-.tabs_chap6 li{font-size:1.2rem;float:left;}
+.tabs_chap6 li{font-size:1.2rem;float:left;color:#b7c5d5}
 .tabs_chap6 li.on,.chap5_tab_wrap .tabs_chap5 li:hover{color:#222;background-image: linear-gradient(transparent calc(100% - 2px), #1fd9de 2px);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -313,7 +315,6 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chapter7_tit_sub{color:white;top:24rem;text-align:center;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:33rem;}
     .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:7rem}
-    
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px){ 
     .chapter1_logo{height:10rem;top:7rem;}
@@ -360,3 +361,26 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap7_video_sub{height:7rem;top:56rem}
     .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:10rem}
 }
+
+
+
+@media only screen and (device-width : 568px){
+    .chapter1_tit_sub,.chap1_video_sub,.chap1_detail{display:none;}
+}
+@media only screen and (device-width : 667px){
+    .chapter1_tit_sub,.chap1_video_sub,.chap1_detail{display:none;}
+}
+@media only screen and (device-width : 736px){
+    .chapter1_tit_sub,.chap1_video_sub,.chap1_detail{display:none;}
+}
+@media only screen and (device-width : 812px){
+    .chapter1_tit1,.chapter1_tit_sub,.chap1_video_sub,.chap1_detail{display:none;}
+}
+
+/* iPads (landscape) ———– */ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+    .chapter1_tit_sub,.chap1_video_sub,.chap1_detail{display:none;}
+} 
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) { 
+    .chap1_video_sub,.chap1_detail{display:none;}
+} 
