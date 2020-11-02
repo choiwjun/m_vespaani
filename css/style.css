@@ -44,7 +44,7 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .btn_close img{width:70%}
 .lnb_menu{text-align:left;box-sizing:content-box;margin-top:64px;padding-left:1.5rem}
 .btn_tit{font-size:1.7rem;color:#222;}
-.btn_tit.on,.btn_tit:hover{color:#1fd9de;}
+/*.btn_tit.on,.btn_tit:hover{color:#1fd9de;}*/
 .tit_wrap{margin-top:1.5rem;}
 .tit_wrap:first-child{margin-top:0px;}
 .list_menu{margin-top:1rem;margin-left:1rem}
@@ -61,11 +61,11 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 .underline:nth-child(1){width:70px;}
 .underline:nth-child(2),.underline:nth-child(3){width:55px;}
 .underline:nth-child(4),.underline:nth-child(5){width:35px;}
-.underline.on {
+/*.underline.on {
 	background-size: 100% 100%;
 	color:#222;
 	display: block;
-}
+}*/
 .community{background:url(../images/bg_comunity.png) left top 7px no-repeat;font-size:1.2rem;}
 .community a{color:#17191b;padding-left:1.5rem;}
 .community a img{vertical-align:middle;margin-left:10px;margin-top:-2px}
