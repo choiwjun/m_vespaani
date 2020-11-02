@@ -66,9 +66,6 @@ header{position:fixed;background:black;height:3.5rem;width:100%;z-index:3;opacit
 	color:#222;
 	display: block;
 }
-.underline a:hover {
-	color:#222;
-}
 .community{background:url(../images/bg_comunity.png) left top 7px no-repeat;font-size:1.2rem;}
 .community a{color:#17191b;padding-left:1.5rem;}
 .community a img{vertical-align:middle;margin-left:10px;margin-top:-2px}
@@ -268,9 +265,9 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap1_detail{height:6.5rem;top:28rem}
     .nav{width:70%;left:-70%}
     .chap4_tab_wrap ul li{width:50%;font-size:1rem;letter-spacing:-2px;text-align:left;float:left;}
-    .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
+    .chap4_tab_wrap ul li:nth-child(3){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
-    .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 361px){ 
     .chapter1_logo{height:6.85rem;top:5rem;}
@@ -279,9 +276,9 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap1_video_sub{height:5rem;top:25rem}
     .chap1_detail{height:7.5rem;top:30rem}
     .chap4_tab_wrap ul li{width:50%;font-size:1.1rem;letter-spacing:-2px; text-align:left;float:left;}
-    .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
+    .chap4_tab_wrap ul li:nth-child(3){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
-    .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}
     .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:210px;background-size:contain;display:block;}
     .chap6_bg div{float:left;margin-left:1rem;margin-top:130px}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
@@ -296,9 +293,9 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chap1_video_sub{height:5rem;top:28rem}
     .chap1_detail{height:7.5rem;top:33rem}
     .chap4_tab_wrap ul li{width:50%;font-size:1.1rem;letter-spacing:-2px;text-align:left;float:left;}
-    .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
+    .chap4_tab_wrap ul li:nth-child(3){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
-    .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:6rem;background-size:contain;}
     .chapter7_tit1{height:4.65rem;background:url('../images/img_chapter1_tit1.png') center top no-repeat;top:16rem;background-size:contain;}
     .chapter7_tit_sub{color:white;top:23rem;text-align:center;}
@@ -306,9 +303,9 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
 }
 @media only screen and (min-device-width : 411px) and (max-device-width : 425px) { 
     .chap4_tab_wrap ul li{width:50%;font-size:1.2rem;letter-spacing:-2px;text-align:left;float:left;}
-    .chap4_tab_wrap ul li:nth-child(3),.chap4_tab_wrap ul li:nth-child(4){clear: both;margin-top:1rem}
+    .chap4_tab_wrap ul li:nth-child(3){clear: both;margin-top:1rem}
     .chap4_tab_wrap ul li:nth-child(3){float:left;}
-    .chap4_tab_wrap ul li:nth-child(4){float:right;margin-top:-1.9rem;}
+    .chap4_tab_wrap ul li:nth-child(4){float:left;margin-top:1rem}
     .chap6_bg{background:url('../images/Untitled-1bg_chap6_musicplayer.png') no-repeat;width:100%;height:250px;background-size:contain;display:block;}
     .chap6_bg div{float:left;margin-left:1rem;margin-top:170px}
     .chapter7_logo{height:7.85rem;background:url('../images/bg_logo.png') center top no-repeat;top:7rem;background-size:contain;}
@@ -316,7 +313,7 @@ address img{vertical-align: middle;margin-right:10px;width:3rem;}
     .chapter7_tit_sub{color:white;top:24rem;text-align:center;}
     .chap7_video_sub{height:5rem;background:url('../images/btn_chap1_video_sub.png') center top no-repeat;background-size:contain;top:33rem;}
     .chap7_appdown_btn{text-align:center;width:calc(100% - 3rem);padding:0 1.5rem;position: absolute;bottom:7rem}
-
+    
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px){ 
     .chapter1_logo{height:10rem;top:7rem;}
